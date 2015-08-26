@@ -1,7 +1,6 @@
 package locadoraIO;
 
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -9,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 public class EscreverArquivo {
 
-	public EscreverArquivo() throws IOException {
+	public EscreverArquivo(String line) throws IOException {
 		
 		//Abri arquivo para escrever cadeia de bytes 
 		OutputStream outputStream = 
@@ -24,7 +23,7 @@ public class EscreverArquivo {
 				new BufferedWriter (outputStreamWriter);
 		
 		//Escreve uma linha no arquivo 
-		bufferedWriter.write("teste arquivo"); 
+		bufferedWriter.write(line); 
 		bufferedWriter.newLine();
 		
 		//Força enviar cadeia de Char para arquivo físico e fecha arquivo 

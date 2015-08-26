@@ -10,11 +10,11 @@ public class Main {
 		
 		Lerteclado lerTeclado = new Lerteclado();
 		
-		String linha = lerTeclado.lerLinha();
+		String line = lerTeclado.lerLinha();
 		
 		lerTeclado.close();
 		
-		new EscreverArquivo();
+		new EscreverArquivo(line);
 
 	}
 
