@@ -32,6 +32,10 @@ public class Filmes {
 		QuantidadeLotacao = quantidadeLotacao;
 	}
 	
+	public String toString() {
+		return this.getNomeFilme() + "#" + this.getTipoFilme() + "#" + this.getQuantidadeFilme();
+	}
+	
 }
 
 	
